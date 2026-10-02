@@ -10,7 +10,7 @@ const hand = Caveat({ subsets: ['latin'], variable: '--font-hand', weight: ['600
 
 export const metadata: Metadata = {
   title: 'Ellen Monroe | Design & Social Media',
-  description: 'Portfólio de Ellen Monroe — design, social media, audiovisual e frontend em São Luís, MA.',
+  description: 'Portfólio de Ellen Monroe: design, social media, audiovisual e frontend em São Luís, MA.',
   generator: 'v0.app',
   icons: {
     icon: [

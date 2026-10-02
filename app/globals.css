@@ -68,3 +68,9 @@ h1,h2,.brand { font-family:var(--font-display), Arial, sans-serif; }
 
 @media (max-width:900px) { .hero-photo .portrait { height:130px; }.hero-photo .landscape { height:110px; } }
 @media (max-width:600px) { .hero-photo .portrait { height:95px; }.hero-photo .landscape { height:80px; }.about-card .big-portrait { height:260px; }.hero h1 { font-size:4.2rem; }.hero h1 .h1-ellen { -webkit-text-stroke:2px var(--wine); text-shadow:4px 4px 0 var(--wine); }.section-title h2 span { white-space:normal; }.exp-photos { gap:10px; }.exp-photo img { height:90px; }.exp-photo figcaption { font-size:.85rem; }.hero { align-items:flex-start; padding-top:130px; min-height:860px; }.photo-left { top:auto; bottom:105px; left:5%; }.photo-right { top:auto; bottom:90px; right:5%; }.hero-photo { width:132px; }.hero-photo .portrait,.hero-photo .landscape { height:110px; }.sticker-yellow { top:96px; right:4%; }.sticker-pink { left:auto; right:8%; bottom:300px; }.project-art { height:240px; } }
+
+/* ---- trilho do topo ---- */
+.rail-line { height:16px; background:repeating-linear-gradient(90deg,transparent 0 14px,var(--dark) 14px 17px); background-clip:padding-box; }
+.rail-line svg { position:static; color:inherit; }
+.rail-train { position:absolute; top:-36px; left:0; display:grid; place-items:center; width:38px; height:32px; background:var(--yellow); color:var(--dark); border:2px solid var(--dark); border-radius:8px 8px 4px 4px; box-shadow:3px 3px 0 var(--dark); animation:train-ride 9s ease-in-out infinite alternate; }
+@keyframes train-ride { from { left:0; } to { left:calc(100% - 38px); } }
