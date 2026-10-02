@@ -14,18 +14,8 @@ export const metadata: Metadata = {
   generator: 'v0.app',
   icons: {
     icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
+      { url: '/favicon-ellen.png', type: 'image/png', sizes: '64x64' },
+      { url: '/favicon-ellen-512.png', type: 'image/png', sizes: '512x512' },
     ],
     apple: '/apple-icon.png',
   },
