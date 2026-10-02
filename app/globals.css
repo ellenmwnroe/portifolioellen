@@ -100,3 +100,34 @@ h1,h2,.brand { font-family:var(--font-display), Arial, sans-serif; }
 .exp-photo:only-child { grid-column:1 / -1; }
 .exp-photo figcaption { font-size:1.25rem; padding:4px 0 6px; }
 @media (max-width:600px) { .exp-photos { gap:12px; }.exp-photo img { height:auto; }.exp-photo figcaption { font-size:1rem; }.folder-detail { padding:14px 14px 18px; } }
+
+/* ---- título sem text-stroke (Safari/iOS desenha o contorno por cima da letra) ---- */
+.hero h1 .h1-ellen { -webkit-text-stroke:0; text-shadow:-2px -2px 0 var(--wine),2px -2px 0 var(--wine),-2px 2px 0 var(--wine),2px 2px 0 var(--wine),0 3px 0 var(--wine),3px 0 0 var(--wine),7px 7px 0 var(--wine); }
+.about-text p,.ticket-main p { margin:0 0 16px; }
+
+/* ---- celular ---- */
+@media (max-width:600px) {
+  .hero { min-height:max(760px,100svh); padding-top:118px; }
+  .hero h1 { font-size:clamp(3.6rem,19vw,5rem); }
+  .hero h1 .h1-ellen { text-shadow:-1.5px -1.5px 0 var(--wine),1.5px -1.5px 0 var(--wine),-1.5px 1.5px 0 var(--wine),1.5px 1.5px 0 var(--wine),4px 4px 0 var(--wine); }
+  .hero h1 em { text-shadow:3px 3px 0 var(--wine); margin-top:-.02em; }
+  .hero-lede { margin:22px auto; }
+  .status-pill { font-size:.66rem; }
+  .pixel-cloud { display:none; }
+  .sun { top:84px; left:5%; right:auto; font-size:2.2rem; }
+  .sticker { font-size:.72rem; padding:7px 11px; }
+  .sticker-yellow { top:auto; right:auto; left:5%; bottom:312px; transform:rotate(-6deg); }
+  .sticker-pink { left:auto; right:5%; bottom:300px; transform:rotate(6deg); }
+  .hero-photo { width:clamp(124px,36vw,160px); }
+  .hero-photo .portrait,.hero-photo .landscape { height:clamp(110px,32vw,150px); }
+  .photo-left { left:4%; bottom:96px; }
+  .photo-right { right:4%; bottom:82px; }
+  .about-card { left:50%; margin-left:-115px; }
+  .note-one { top:-14px; right:-6px; }
+  .note-two { bottom:-30px; left:0; }
+  .about-visual { margin-bottom:20px; }
+  .folder-tab.active { transform:none; }
+  .tool-icon { min-height:96px; }
+}
+@media (max-width:370px) { .hero { min-height:max(800px,100svh); }.sticker-yellow { bottom:292px; }.sticker-pink { bottom:282px; }.hero-photo { width:118px; }.hero-photo .portrait,.hero-photo .landscape { height:100px; } }
+section[id] { scroll-margin-top:84px; }
