@@ -74,3 +74,17 @@ h1,h2,.brand { font-family:var(--font-display), Arial, sans-serif; }
 .rail-line svg { position:static; color:inherit; }
 .rail-train { position:absolute; top:-36px; left:0; display:grid; place-items:center; width:38px; height:32px; background:var(--yellow); color:var(--dark); border:2px solid var(--dark); border-radius:8px 8px 4px 4px; box-shadow:3px 3px 0 var(--dark); animation:train-ride 9s ease-in-out infinite alternate; }
 @keyframes train-ride { from { left:0; } to { left:calc(100% - 38px); } }
+
+/* ---- fotos maiores no topo (desktop) ---- */
+@media (min-width:1200px) {
+  .hero-photo { width:clamp(230px,19vw,320px); padding:12px; }
+  .hero-photo .portrait { height:clamp(260px,23vw,360px); }
+  .hero-photo .landscape { height:clamp(240px,21vw,330px); }
+  .hero-photo span { font-size:11px; }
+  .hero-photo small { font-size:1rem; }
+  .photo-left { left:5%; top:22%; }
+  .photo-right { right:5%; bottom:16%; }
+  .sticker-pink { left:15%; bottom:14%; }
+  .sticker-yellow { top:22%; right:22%; }
+}
+@media (min-width:901px) and (max-width:1199px) { .hero-photo { width:200px; }.hero-photo .portrait { height:220px; }.hero-photo .landscape { height:200px; }.photo-left { left:3%; top:24%; }.photo-right { right:3%; bottom:14%; } }
