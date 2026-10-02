@@ -144,7 +144,7 @@ section[id] { scroll-margin-top:84px; }
   .photo-left { order:2; margin-top:46px; transform:rotate(-4deg); left:auto; bottom:auto; }
   .sticker-yellow { order:3; align-self:flex-end; margin:-26px 4px 0 0; transform:rotate(6deg); left:auto; bottom:auto; }
   .photo-right { order:4; margin-top:26px; transform:rotate(4deg); right:auto; bottom:auto; }
-  .sticker-pink { order:5; align-self:flex-start; margin:-26px 0 0 4px; transform:rotate(-6deg); right:auto; bottom:auto; }
+  .sticker-pink { order:5; align-self:flex-end; margin:-26px 4px 0 0; transform:rotate(-6deg); right:auto; bottom:auto; }
   .hero-bottom { order:6; left:auto; right:auto; bottom:auto; width:100%; margin-top:56px; }
   .sticker { font-size:.85rem; padding:9px 14px; }
 }
