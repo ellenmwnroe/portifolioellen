@@ -88,3 +88,15 @@ h1,h2,.brand { font-family:var(--font-display), Arial, sans-serif; }
   .sticker-yellow { top:22%; right:22%; }
 }
 @media (min-width:901px) and (max-width:1199px) { .hero-photo { width:200px; }.hero-photo .portrait { height:220px; }.hero-photo .landscape { height:200px; }.photo-left { left:3%; top:24%; }.photo-right { right:3%; bottom:14%; } }
+
+/* ---- fotos das experiências maiores ---- */
+.folder-detail { padding:16px 22px 20px; }
+.current-tag,.train-tag { white-space:nowrap; }
+.exp-photos { display:grid; grid-template-columns:1fr 1fr; gap:18px 16px; margin-top:18px; }
+.exp-photo,.exp-photo:only-child { max-width:none; width:auto; padding:8px 8px 0; }
+.exp-photo img,.exp-photo:only-child img { height:auto; aspect-ratio:3/4; }
+.exp-photo-1 { grid-column:1 / -1; order:3; }
+.exp-photo-1 img,.exp-photo:only-child img { aspect-ratio:16/10; object-position:center 40%; }
+.exp-photo:only-child { grid-column:1 / -1; }
+.exp-photo figcaption { font-size:1.25rem; padding:4px 0 6px; }
+@media (max-width:600px) { .exp-photos { gap:12px; }.exp-photo img { height:auto; }.exp-photo figcaption { font-size:1rem; }.folder-detail { padding:14px 14px 18px; } }
